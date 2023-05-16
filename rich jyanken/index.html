@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jyanken</title>
+    <script src="main.js/jyanken.js"></script>
+    <style>
+        #res {
+            font-size: 3rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>じゃんけん</h1>
+    <h2>あなたの手を選択してください</h2>
+    <table>
+        <tr>
+            <td><img src="img/gu.png" onclick="janken(0);audio()"></td>
+            <td><img src="img/choki.png" onclick="janken(1);audio2()"></td>
+            <td><img src="img/pa.png" onclick="janken(2);audio3()"></td>
+        </tr>
+    </table>
+    <audio id="btn_audio">
+        <source src="sound/guu_02.wav" type="audio/wav">
+    </audio>
+    <audio id="btn_audio2">
+        <source src="sound/choki_01.wav" type="audio/wav">
+    </audio>
+    <audio id="btn_audio3">
+        <source src="sound/paa_01.wav" type="audio/wav">
+    </audio>
+    
+    <hr>
+    <table>
+        <tr>
+            <th>あなたの手</th>
+            <th>コンピュータの手</th>
+        </tr>
+        <tr>
+            <td><img src="" id="userImg"></td>
+            <td><img src="" id="pcImg"></td>
+        </tr>
+        <tr>
+            <td colspan="2" id="res">
+                <p id="result"></p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
